@@ -2,9 +2,9 @@ name: triggers
 
 # This determines what triggers your workflow (e.g., pushing code)
 #on: [push]
-
+ on: workflow_dispatch
 jobs:
-  say-hello:
+  triggers:
     # The type of virtual machine the job will run on
     runs-on: ubuntu-latest
 
