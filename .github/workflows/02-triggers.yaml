@@ -1,8 +1,7 @@
 name: triggers
 
 # This determines what triggers your workflow (e.g., pushing code)
-#on: [push]
- on: workflow_dispatch
+on: workflow_dispatch
 jobs:
   triggers:
     # The type of virtual machine the job will run on
@@ -14,5 +13,5 @@ jobs:
      #  uses: actions/checkout@v4
 
       # Step 2: Run a basic shell command to print text
-      - name: Print Hello World
-        run: echo "Hello, World!"
+      - name: manual dispatch
+        run: echo "dispatch"
