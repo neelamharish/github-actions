@@ -1,0 +1,18 @@
+name: triggers
+
+# This determines what triggers your workflow (e.g., pushing code)
+#on: [push]
+
+jobs:
+  say-hello:
+    # The type of virtual machine the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out your repository code onto the runner
+     # - name: Checkout Repository
+     #  uses: actions/checkout@v4
+
+      # Step 2: Run a basic shell command to print text
+      - name: Print Hello World
+        run: echo "Hello, World!"
